@@ -48,7 +48,7 @@ Partial Class Form1
         cbxMilo = New CheckBox()
         lblTarikh = New Label()
         dtpTarikh = New DateTimePicker()
-        dgvData = New DataGridView()
+        dgvTable = New DataGridView()
         BTNCreate = New Button()
         BTNRead = New Button()
         BTNUpdate = New Button()
@@ -59,7 +59,7 @@ Partial Class Form1
         gbxJantina.SuspendLayout()
         gbxKaedahBayaran.SuspendLayout()
         gbxPerisa.SuspendLayout()
-        CType(dgvData, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvTable, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblMaklumatPelanggan
@@ -310,15 +310,15 @@ Partial Class Form1
         dtpTarikh.Size = New Size(250, 27)
         dtpTarikh.TabIndex = 16
         ' 
-        ' dgvData
+        ' dgvTable
         ' 
-        dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvData.Columns.AddRange(New DataGridViewColumn() {clmBil, clmNama, clmNotel})
-        dgvData.Location = New Point(381, 343)
-        dgvData.Name = "dgvData"
-        dgvData.RowHeadersWidth = 51
-        dgvData.Size = New Size(429, 82)
-        dgvData.TabIndex = 17
+        dgvTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvTable.Columns.AddRange(New DataGridViewColumn() {clmBil, clmNama, clmNotel})
+        dgvTable.Location = New Point(381, 343)
+        dgvTable.Name = "dgvTable"
+        dgvTable.RowHeadersWidth = 51
+        dgvTable.Size = New Size(429, 82)
+        dgvTable.TabIndex = 17
         ' 
         ' BTNCreate
         ' 
@@ -386,7 +386,7 @@ Partial Class Form1
         Controls.Add(BTNUpdate)
         Controls.Add(BTNRead)
         Controls.Add(BTNCreate)
-        Controls.Add(dgvData)
+        Controls.Add(dgvTable)
         Controls.Add(dtpTarikh)
         Controls.Add(lblTarikh)
         Controls.Add(gbxPerisa)
@@ -412,7 +412,7 @@ Partial Class Form1
         gbxKaedahBayaran.PerformLayout()
         gbxPerisa.ResumeLayout(False)
         gbxPerisa.PerformLayout()
-        CType(dgvData, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvTable, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -443,7 +443,7 @@ Partial Class Form1
     Friend WithEvents cbxMilo As CheckBox
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dtpTarikh As DateTimePicker
-    Friend WithEvents dgvData As DataGridView
+    Friend WithEvents dgvTable As DataGridView
     Friend WithEvents BTNCreate As Button
     Friend WithEvents BTNRead As Button
     Friend WithEvents BTNUpdate As Button
