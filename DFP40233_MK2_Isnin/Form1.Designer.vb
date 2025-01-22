@@ -40,7 +40,7 @@ Partial Class Form1
         rbtCashless = New RadioButton()
         rbtCash = New RadioButton()
         lblPerisa = New Label()
-        GroupBox1 = New GroupBox()
+        gbxPerisa = New GroupBox()
         cbxPisang = New CheckBox()
         cbxStrawberi = New CheckBox()
         cbxCoklat = New CheckBox()
@@ -52,23 +52,23 @@ Partial Class Form1
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
-        btnCreate = New Button()
-        btnRead = New Button()
-        btnUpdate = New Button()
-        btnDelete = New Button()
+        BTNCreate = New Button()
+        BTNRead = New Button()
+        BTNUpdate = New Button()
+        BTNDelete = New Button()
         gbxJantina.SuspendLayout()
         gbxKaedahBayaran.SuspendLayout()
-        GroupBox1.SuspendLayout()
+        gbxPerisa.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblMaklumatPelanggan
         ' 
         lblMaklumatPelanggan.AutoSize = True
-        lblMaklumatPelanggan.Font = New Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblMaklumatPelanggan.Font = New Font("Showcard Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblMaklumatPelanggan.Location = New Point(259, 23)
         lblMaklumatPelanggan.Name = "lblMaklumatPelanggan"
-        lblMaklumatPelanggan.Size = New Size(271, 29)
+        lblMaklumatPelanggan.Size = New Size(333, 35)
         lblMaklumatPelanggan.TabIndex = 0
         lblMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
         lblMaklumatPelanggan.TextAlign = ContentAlignment.TopCenter
@@ -194,7 +194,7 @@ Partial Class Form1
         ' 
         gbxKaedahBayaran.Controls.Add(rbtCashless)
         gbxKaedahBayaran.Controls.Add(rbtCash)
-        gbxKaedahBayaran.Location = New Point(142, 489)
+        gbxKaedahBayaran.Location = New Point(142, 478)
         gbxKaedahBayaran.Name = "gbxKaedahBayaran"
         gbxKaedahBayaran.Size = New Size(180, 87)
         gbxKaedahBayaran.TabIndex = 12
@@ -231,18 +231,18 @@ Partial Class Form1
         lblPerisa.TabIndex = 13
         lblPerisa.Text = "Perisa :"
         ' 
-        ' GroupBox1
+        ' gbxPerisa
         ' 
-        GroupBox1.Controls.Add(cbxPisang)
-        GroupBox1.Controls.Add(cbxStrawberi)
-        GroupBox1.Controls.Add(cbxCoklat)
-        GroupBox1.Controls.Add(cbxKopi)
-        GroupBox1.Controls.Add(cbxMilo)
-        GroupBox1.Location = New Point(536, 98)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(255, 116)
-        GroupBox1.TabIndex = 14
-        GroupBox1.TabStop = False
+        gbxPerisa.Controls.Add(cbxPisang)
+        gbxPerisa.Controls.Add(cbxStrawberi)
+        gbxPerisa.Controls.Add(cbxCoklat)
+        gbxPerisa.Controls.Add(cbxKopi)
+        gbxPerisa.Controls.Add(cbxMilo)
+        gbxPerisa.Location = New Point(536, 98)
+        gbxPerisa.Name = "gbxPerisa"
+        gbxPerisa.Size = New Size(255, 116)
+        gbxPerisa.TabIndex = 14
+        gbxPerisa.TabStop = False
         ' 
         ' cbxPisang
         ' 
@@ -341,55 +341,55 @@ Partial Class Form1
         Column3.Name = "Column3"
         Column3.Width = 125
         ' 
-        ' btnCreate
+        ' BTNCreate
         ' 
-        btnCreate.Location = New Point(381, 467)
-        btnCreate.Name = "btnCreate"
-        btnCreate.Size = New Size(94, 29)
-        btnCreate.TabIndex = 18
-        btnCreate.Text = "CREATE"
-        btnCreate.UseVisualStyleBackColor = True
+        BTNCreate.Location = New Point(381, 467)
+        BTNCreate.Name = "BTNCreate"
+        BTNCreate.Size = New Size(94, 29)
+        BTNCreate.TabIndex = 18
+        BTNCreate.Text = "CREATE"
+        BTNCreate.UseVisualStyleBackColor = True
         ' 
-        ' btnRead
+        ' BTNRead
         ' 
-        btnRead.Location = New Point(500, 467)
-        btnRead.Name = "btnRead"
-        btnRead.Size = New Size(94, 29)
-        btnRead.TabIndex = 19
-        btnRead.Text = "READ"
-        btnRead.UseVisualStyleBackColor = True
+        BTNRead.Location = New Point(500, 467)
+        BTNRead.Name = "BTNRead"
+        BTNRead.Size = New Size(94, 29)
+        BTNRead.TabIndex = 19
+        BTNRead.Text = "READ"
+        BTNRead.UseVisualStyleBackColor = True
         ' 
-        ' btnUpdate
+        ' BTNUpdate
         ' 
-        btnUpdate.Location = New Point(614, 467)
-        btnUpdate.Name = "btnUpdate"
-        btnUpdate.Size = New Size(94, 29)
-        btnUpdate.TabIndex = 20
-        btnUpdate.Text = "UPDATE"
-        btnUpdate.UseVisualStyleBackColor = True
+        BTNUpdate.Location = New Point(614, 467)
+        BTNUpdate.Name = "BTNUpdate"
+        BTNUpdate.Size = New Size(94, 29)
+        BTNUpdate.TabIndex = 20
+        BTNUpdate.Text = "UPDATE"
+        BTNUpdate.UseVisualStyleBackColor = True
         ' 
-        ' btnDelete
+        ' BTNDelete
         ' 
-        btnDelete.Location = New Point(726, 467)
-        btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(94, 29)
-        btnDelete.TabIndex = 21
-        btnDelete.Text = "DELETE"
-        btnDelete.UseVisualStyleBackColor = True
+        BTNDelete.Location = New Point(726, 467)
+        BTNDelete.Name = "BTNDelete"
+        BTNDelete.Size = New Size(94, 29)
+        BTNDelete.TabIndex = 21
+        BTNDelete.Text = "DELETE"
+        BTNDelete.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(851, 588)
-        Controls.Add(btnDelete)
-        Controls.Add(btnUpdate)
-        Controls.Add(btnRead)
-        Controls.Add(btnCreate)
+        Controls.Add(BTNDelete)
+        Controls.Add(BTNUpdate)
+        Controls.Add(BTNRead)
+        Controls.Add(BTNCreate)
         Controls.Add(DataGridView1)
         Controls.Add(dtpTarikh)
         Controls.Add(lblTarikh)
-        Controls.Add(GroupBox1)
+        Controls.Add(gbxPerisa)
         Controls.Add(lblPerisa)
         Controls.Add(gbxKaedahBayaran)
         Controls.Add(lblKaedahBayaran)
@@ -410,8 +410,8 @@ Partial Class Form1
         gbxJantina.PerformLayout()
         gbxKaedahBayaran.ResumeLayout(False)
         gbxKaedahBayaran.PerformLayout()
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
+        gbxPerisa.ResumeLayout(False)
+        gbxPerisa.PerformLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -435,7 +435,7 @@ Partial Class Form1
     Friend WithEvents rbtCash As RadioButton
     Friend WithEvents rbtCashless As RadioButton
     Friend WithEvents lblPerisa As Label
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents gbxPerisa As GroupBox
     Friend WithEvents cbxPisang As CheckBox
     Friend WithEvents cbxStrawberi As CheckBox
     Friend WithEvents cbxCoklat As CheckBox
@@ -447,9 +447,9 @@ Partial Class Form1
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents btnCreate As Button
-    Friend WithEvents btnRead As Button
-    Friend WithEvents btnUpdate As Button
-    Friend WithEvents btnDelete As Button
+    Friend WithEvents BTNCreate As Button
+    Friend WithEvents BTNRead As Button
+    Friend WithEvents BTNUpdate As Button
+    Friend WithEvents BTNDelete As Button
 
 End Class
