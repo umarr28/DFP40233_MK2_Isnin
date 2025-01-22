@@ -65,10 +65,10 @@ Partial Class Form1
         ' lblMaklumatPelanggan
         ' 
         lblMaklumatPelanggan.AutoSize = True
-        lblMaklumatPelanggan.Font = New Font("Showcard Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblMaklumatPelanggan.Font = New Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblMaklumatPelanggan.Location = New Point(259, 23)
         lblMaklumatPelanggan.Name = "lblMaklumatPelanggan"
-        lblMaklumatPelanggan.Size = New Size(333, 35)
+        lblMaklumatPelanggan.Size = New Size(356, 37)
         lblMaklumatPelanggan.TabIndex = 0
         lblMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
         lblMaklumatPelanggan.TextAlign = ContentAlignment.TopCenter
