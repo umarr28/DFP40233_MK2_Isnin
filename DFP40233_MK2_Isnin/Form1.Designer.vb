@@ -49,10 +49,10 @@ Partial Class Form1
         lblTarikh = New Label()
         dtpTarikh = New DateTimePicker()
         dgvTable = New DataGridView()
-        BTNCreate = New Button()
-        BTNRead = New Button()
-        BTNUpdate = New Button()
-        BTNDelete = New Button()
+        BtnCreate = New Button()
+        BtnRead = New Button()
+        BtnUpdate = New Button()
+        BtnDelete = New Button()
         clmBil = New DataGridViewTextBoxColumn()
         clmNama = New DataGridViewTextBoxColumn()
         clmNotel = New DataGridViewTextBoxColumn()
@@ -320,41 +320,41 @@ Partial Class Form1
         dgvTable.Size = New Size(429, 82)
         dgvTable.TabIndex = 17
         ' 
-        ' BTNCreate
+        ' BtnCreate
         ' 
-        BTNCreate.Location = New Point(381, 467)
-        BTNCreate.Name = "BTNCreate"
-        BTNCreate.Size = New Size(94, 29)
-        BTNCreate.TabIndex = 18
-        BTNCreate.Text = "CREATE"
-        BTNCreate.UseVisualStyleBackColor = True
+        BtnCreate.Location = New Point(381, 467)
+        BtnCreate.Name = "BtnCreate"
+        BtnCreate.Size = New Size(94, 29)
+        BtnCreate.TabIndex = 18
+        BtnCreate.Text = "CREATE"
+        BtnCreate.UseVisualStyleBackColor = True
         ' 
-        ' BTNRead
+        ' BtnRead
         ' 
-        BTNRead.Location = New Point(500, 467)
-        BTNRead.Name = "BTNRead"
-        BTNRead.Size = New Size(94, 29)
-        BTNRead.TabIndex = 19
-        BTNRead.Text = "READ"
-        BTNRead.UseVisualStyleBackColor = True
+        BtnRead.Location = New Point(500, 467)
+        BtnRead.Name = "BtnRead"
+        BtnRead.Size = New Size(94, 29)
+        BtnRead.TabIndex = 19
+        BtnRead.Text = "READ"
+        BtnRead.UseVisualStyleBackColor = True
         ' 
-        ' BTNUpdate
+        ' BtnUpdate
         ' 
-        BTNUpdate.Location = New Point(614, 467)
-        BTNUpdate.Name = "BTNUpdate"
-        BTNUpdate.Size = New Size(94, 29)
-        BTNUpdate.TabIndex = 20
-        BTNUpdate.Text = "UPDATE"
-        BTNUpdate.UseVisualStyleBackColor = True
+        BtnUpdate.Location = New Point(614, 467)
+        BtnUpdate.Name = "BtnUpdate"
+        BtnUpdate.Size = New Size(94, 29)
+        BtnUpdate.TabIndex = 20
+        BtnUpdate.Text = "UPDATE"
+        BtnUpdate.UseVisualStyleBackColor = True
         ' 
-        ' BTNDelete
+        ' BtnDelete
         ' 
-        BTNDelete.Location = New Point(726, 467)
-        BTNDelete.Name = "BTNDelete"
-        BTNDelete.Size = New Size(94, 29)
-        BTNDelete.TabIndex = 21
-        BTNDelete.Text = "DELETE"
-        BTNDelete.UseVisualStyleBackColor = True
+        BtnDelete.Location = New Point(726, 467)
+        BtnDelete.Name = "BtnDelete"
+        BtnDelete.Size = New Size(94, 29)
+        BtnDelete.TabIndex = 21
+        BtnDelete.Text = "DELETE"
+        BtnDelete.UseVisualStyleBackColor = True
         ' 
         ' clmBil
         ' 
@@ -382,10 +382,10 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(851, 588)
-        Controls.Add(BTNDelete)
-        Controls.Add(BTNUpdate)
-        Controls.Add(BTNRead)
-        Controls.Add(BTNCreate)
+        Controls.Add(BtnDelete)
+        Controls.Add(BtnUpdate)
+        Controls.Add(BtnRead)
+        Controls.Add(BtnCreate)
         Controls.Add(dgvTable)
         Controls.Add(dtpTarikh)
         Controls.Add(lblTarikh)
@@ -444,10 +444,10 @@ Partial Class Form1
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dtpTarikh As DateTimePicker
     Friend WithEvents dgvTable As DataGridView
-    Friend WithEvents BTNCreate As Button
-    Friend WithEvents BTNRead As Button
-    Friend WithEvents BTNUpdate As Button
-    Friend WithEvents BTNDelete As Button
+    Friend WithEvents BtnCreate As Button
+    Friend WithEvents BtnRead As Button
+    Friend WithEvents BtnUpdate As Button
+    Friend WithEvents BtnDelete As Button
     Friend WithEvents clmBil As DataGridViewTextBoxColumn
     Friend WithEvents clmNama As DataGridViewTextBoxColumn
     Friend WithEvents clmNotel As DataGridViewTextBoxColumn
