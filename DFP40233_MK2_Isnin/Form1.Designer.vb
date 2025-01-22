@@ -48,18 +48,18 @@ Partial Class Form1
         cbxMilo = New CheckBox()
         lblTarikh = New Label()
         dtpTarikh = New DateTimePicker()
-        DataGridView1 = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
+        dgvData = New DataGridView()
         BTNCreate = New Button()
         BTNRead = New Button()
         BTNUpdate = New Button()
         BTNDelete = New Button()
+        clmBil = New DataGridViewTextBoxColumn()
+        clmNama = New DataGridViewTextBoxColumn()
+        clmNotel = New DataGridViewTextBoxColumn()
         gbxJantina.SuspendLayout()
         gbxKaedahBayaran.SuspendLayout()
         gbxPerisa.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvData, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblMaklumatPelanggan
@@ -310,36 +310,15 @@ Partial Class Form1
         dtpTarikh.Size = New Size(250, 27)
         dtpTarikh.TabIndex = 16
         ' 
-        ' DataGridView1
+        ' dgvData
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3})
-        DataGridView1.Location = New Point(381, 343)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(429, 82)
-        DataGridView1.TabIndex = 17
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "Bil"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.Width = 125
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = "Nama"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.Width = 125
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "No. tel"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.Width = 125
+        dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvData.Columns.AddRange(New DataGridViewColumn() {clmBil, clmNama, clmNotel})
+        dgvData.Location = New Point(381, 343)
+        dgvData.Name = "dgvData"
+        dgvData.RowHeadersWidth = 51
+        dgvData.Size = New Size(429, 82)
+        dgvData.TabIndex = 17
         ' 
         ' BTNCreate
         ' 
@@ -377,6 +356,27 @@ Partial Class Form1
         BTNDelete.Text = "DELETE"
         BTNDelete.UseVisualStyleBackColor = True
         ' 
+        ' clmBil
+        ' 
+        clmBil.HeaderText = "Bil"
+        clmBil.MinimumWidth = 6
+        clmBil.Name = "clmBil"
+        clmBil.Width = 125
+        ' 
+        ' clmNama
+        ' 
+        clmNama.HeaderText = "Nama"
+        clmNama.MinimumWidth = 6
+        clmNama.Name = "clmNama"
+        clmNama.Width = 125
+        ' 
+        ' clmNotel
+        ' 
+        clmNotel.HeaderText = "No. tel"
+        clmNotel.MinimumWidth = 6
+        clmNotel.Name = "clmNotel"
+        clmNotel.Width = 125
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -386,7 +386,7 @@ Partial Class Form1
         Controls.Add(BTNUpdate)
         Controls.Add(BTNRead)
         Controls.Add(BTNCreate)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvData)
         Controls.Add(dtpTarikh)
         Controls.Add(lblTarikh)
         Controls.Add(gbxPerisa)
@@ -412,7 +412,7 @@ Partial Class Form1
         gbxKaedahBayaran.PerformLayout()
         gbxPerisa.ResumeLayout(False)
         gbxPerisa.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvData, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -443,13 +443,13 @@ Partial Class Form1
     Friend WithEvents cbxMilo As CheckBox
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dtpTarikh As DateTimePicker
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents dgvData As DataGridView
     Friend WithEvents BTNCreate As Button
     Friend WithEvents BTNRead As Button
     Friend WithEvents BTNUpdate As Button
     Friend WithEvents BTNDelete As Button
+    Friend WithEvents clmBil As DataGridViewTextBoxColumn
+    Friend WithEvents clmNama As DataGridViewTextBoxColumn
+    Friend WithEvents clmNotel As DataGridViewTextBoxColumn
 
 End Class
